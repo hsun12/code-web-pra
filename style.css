@@ -1,0 +1,59 @@
+div.con {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 25%;
+}
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  animation-name: cross;
+  animation-duration: 2s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 50%;
+}
+@keyframes cross {
+  from {
+    background-color: cyan;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background-color: darkorange;
+    top: 400px;
+    left: 400px;
+  }
+}
+div.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(29, 219, 162);
+  transition: all 1s;
+}
+div.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(224, 30, 159);
+  transition: all 1s;
+}
+div.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(190, 175, 37);
+  transition: all 1s;
+}
+div.box:hover {
+  transform: scale(2, 3);
+}
+div.box1:hover {
+  transform: rotate(120deg);
+}
+div.box2:hover {
+  transform: rotateX(90deg);
+}
+div.box3:hover {
+  opacity: 0.4;
+}
